@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html lang="en">      
+<head>        
+    <meta charset="UTF-8">         
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">         
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>花籽辅导</title>        
+    <link href="index.css" rel="stylesheet" type="text/css">     
+    <link href="reset.css" rel="stylesheet" type="text/css">   
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>        
+<body> 
+    <div class="huazi-website">
+        <div class="common-sec first-sec clearfix">
+            <div class='huaziHeader clearfix'>
+                <span class='huaziHeader-logo'></span>
+                <span class='huaziHeader-text'></span>
+                <a href="https://www.huazilive.com/zuoye" class='huaziHeader-computer-text' onmouseleave="computerLeave()">登录网页版</a>
+                <span class='huaziHeader-computer' onmouseenter="computerMouse()"></span>
+            </div>
+            <div class="sec-cont clearfix">
+                <div class="left-sec-cont">
+                    <h1 class="text-one">花籽辅导教师端</h1>
+                    <p class="text-two">在线作业自动批改</p>
+                    <p class="text-three">考点掌握统计,大数据辅助教学</p>
+                    <div class="download-box">
+                        <span class="dib ios-download client-download">IOS下载</span>
+                        <span class="dib android-download client-download">android下载</span>
+                        <div class="ios-code">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="right-sec-cont">
+                    <div class="right-sec-cont-teahcer right-sec-cont-common">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="common-sec second-sec clearfix">
+            <div class='huaziHeader clearfix'>
+                <span class='huaziHeader-logo'></span>
+                <span class='huaziHeader-text'></span>
+                <a href="https://www.huazilive.com/zuoye" class='huaziHeader-computer-text' onmouseleave="computerLeave()">登录网页版</a>
+                <span class='huaziHeader-computer' onmouseenter="computerMouse()"></span>
+            </div>
+            <div class="sec-cont clearfix">
+                <div class="left-sec-cont">
+                    <h1 class="text-one">花籽辅导学生端</h1>
+                    <p class="text-two">在线作业即时反馈</p>
+                    <p class="text-three">课后练习大数据智能推荐</p>
+                    <div>
+                        <span class="dib ios-download client-download">IOS下载</span>
+                        <span class="dib android-download client-download">android下载</span>
+                        <div class="ios-code">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="right-sec-cont">
+                    <div class="right-sec-cont-stu right-sec-cont-common">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="common-sec third-sec clearfix">
+            <div class='huaziHeader clearfix'>
+                <span class='huaziHeader-logo'></span>
+                <span class='huaziHeader-text'></span>
+                <a href="https://www.huazilive.com/zuoye" class='huaziHeader-computer-text' onmouseleave="computerLeave()">登录网页版</a>
+                <span class='huaziHeader-computer' onmouseenter="computerMouse()"></span>
+            </div>
+            <div class="sec-cont clearfix">
+                <div class="left-sec-cont">
+                    <h1 class="text-one" style="color:rgba(0, 63, 118, 1)">花籽辅导在线作业系统</h1>
+                    <p class="text-two">在线批改,完整保留批阅痕迹</p>
+                    <p class="text-three">组卷多维度选题</p>
+                   <!--  <div>
+                       <span class="dib ios-download">IOS下载</span>
+                       <span class="dib android-download">android下载</span>
+                   </div> -->
+                </div>
+                <div class="right-sec-cont">
+                    <div class="right-sec-cont-homework right-sec-cont-common">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="common-sec fourth-sec clearfix">
+            <div class='huaziHeader clearfix'>
+                <span class='huaziHeader-logo'></span>
+                <span class='huaziHeader-text'></span>
+                <a href="https://www.huazilive.com/zuoye" class='huaziHeader-computer-text' onmouseleave="computerLeave()">登录网页版</a>
+                <span class='huaziHeader-computer' onmouseenter="computerMouse()"></span>
+            </div>
+            <div class="sec-cont clearfix">
+                <div class="left-sec-cont">
+                    <h1 class="text-one" style="color:rgba(0, 63, 118, 1)">花籽录题系统</h1>
+                    <p class="text-two">ocr文字识别,自由试题高效录入</p>
+                    <p class="text-three">自由组卷,一键打印</p>
+                 <!--    <div>
+                     <span class="dib ios-download">IOS下载</span>
+                     <span class="dib android-download">android下载</span>
+                 </div> -->
+                </div>
+                <div class="right-sec-cont">
+                    <div class="right-sec-cont-luti right-sec-cont-common">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer">Copyright © 2018 青帝教育科技（北京）有限公司版权所有. 京公网安备110108020135210号 京ICP备18037313号-1</div>
+        </div>
+        <ul class="focus-spot">
+            <li><a href="javascript:;"></a></li>
+            <li><a href="javascript:;"></a></li>
+            <li><a href="javascript:;"></a></li>
+            <li><a href="javascript:;"></a></li>
+        </ul>
+    </div > 
+</body>         
+</html>

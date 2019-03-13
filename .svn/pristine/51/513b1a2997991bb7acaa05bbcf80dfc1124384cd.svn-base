@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+}
+.huazi-website{
+    position: relative;
+    width: 100%;
+     overflow-x:hidden;
+}
+.common-sec{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.common-sec .huaziHeader{
+    width: 100%;
+    height: 56px;
+    margin-top: 14px;
+}
+.common-sec .huaziHeader .huaziHeader-logo{
+    float: left;
+    margin:8px 7px 8px 16px;
+    width: 40px;
+    height: 40px;
+    background: url('img/huaziheader.png') no-repeat;
+    background-size:100% 100%; 
+}
+.common-sec .huaziHeader .huaziHeader-text{
+    float: left;
+    margin-top:16px;
+    width: 56px;
+    height: 22px;
+    background: url('img/huaziheader-txt.png') no-repeat;
+    background-size:100% 100%; 
+}
+.common-sec .huaziHeader .huaziHeader-computer{
+    float: right;
+    width: 29px;
+    height: 29px;
+    margin:12px 14px 0px 0px;
+    background: url('img/computer.png') no-repeat;
+    background-size:100% 100%; 
+}
+.common-sec .huaziHeader .huaziHeader-computer-text{
+    float: right;
+    display: none;
+    width:86px;
+    height: 24px;
+    margin:14px 14px 0px 0px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 17px;
+    text-align: center;
+    font-family: STYuanti-SC-Regular;
+    opacity: 0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    overflow: hidden;
+    
+}
+.common-sec .huaziHeader .huaziHeader-computer-text:hover{
+    opacity: 1;
+   
+}
+.common-sec .sec-cont .left-sec-cont{
+    width: 428px;
+    margin:16px 0px 0px 25px;
+}
+
+.common-sec .sec-cont .left-sec-cont .text-one{
+    height: 50px;
+    line-height: 50px;
+    color: rgba(0, 39, 131, 1);
+    font-size:30px;
+    text-align: left;
+    font-family: PingFangSC-Semibold;
+}
+.common-sec .sec-cont .left-sec-cont .text-two{
+    height: 36px;
+    line-height: 36px;
+    margin:7px 0px 0px 0px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    text-align: left;
+
+}
+.common-sec .sec-cont .left-sec-cont .text-three{
+    line-height: 36px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    text-align: left;
+}
+.common-sec .sec-cont .left-sec-cont .download-box{
+    width: 296px;
+    margin-top:20px;
+}
+.common-sec .sec-cont .left-sec-cont .ios-download{
+    padding: 5px 0.5rem 5px 26px;
+    border-radius: 100px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    margin-right: 12px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    background: url('img/share-arrow.png') right center no-repeat;
+    background-size:16px 16px; 
+}
+.common-sec .sec-cont .left-sec-cont .android-download{
+    padding: 5px 0.5rem 5px 12px;
+    border-radius: 100px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    background: url('img/share-arrow.png') right center no-repeat;
+    background-size:16px 16px; 
+}
+.common-sec .sec-cont .left-sec-cont .ios-code{
+    display: none;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin:10px 0px 0px 82px;
+    background: url('img/erweima.png') center center no-repeat;
+    background-size:100% 100%; 
+}
+.common-sec .sec-cont .left-sec-cont .shake{
+    display:block;-webkit-animation:gd-shake 0.5s ease;-moz-animation:gd-shake 0.5s ease;animation:gd-shake 0.5s ease;
+}
+.footer{
+    position: absolute;
+    bottom:0.35rem;
+    width: 100%;
+    height: 12px;
+    line-height: 12px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding-left: 0.18rem;
+    font-size: 12px;
+    background: url('img/police.png') left center no-repeat;
+    background-size:13px 10px; 
+}
+/* .common-sec .sec-cont .left-sec-cont .ios-download:hover .ios-code{} */
+@keyframes gd-shake{
+    0%{top:0;}
+    50%{top:-170px;}
+    100%{top:170px;}
+}
+.common-sec .sec-cont .right-sec-cont{
+    width: calc(100% - 538px);
+    margin-left: 10px;
+}
+.common-sec .sec-cont .right-sec-cont .right-sec-cont-common{
+    margin: 71px 10% 0px 40px;
+}
+.common-sec .sec-cont .right-sec-cont .right-sec-cont-teahcer{
+    width: 286px;
+    height: 214px;
+    margin: 50px 10% 20px 40px;
+    background: url('img/huazi-teach-bg.png') center center no-repeat;
+    background-size:100% 100%; 
+}
+.common-sec .sec-cont .right-sec-cont .right-sec-cont-stu{
+    width:315px;
+    height: 214px;
+    margin: 50px 10% 20px 40px;
+    background: url('img/huazi-stu-bg.png') center center no-repeat;
+    background-size:100% 100%; 
+}
+.common-sec .sec-cont .right-sec-cont .right-sec-cont-homework{
+    width: 315px;
+    height: 214px;
+    background: url('img/homework-bg.png') center center no-repeat;
+    background-size:100% 100%;
+}
+.common-sec .sec-cont .right-sec-cont .right-sec-cont-luti{
+    width: 315px;
+    height: 214px;
+    background: url('img/luti-bg.png') center center no-repeat;
+    background-size:100% 100%;
+}
+.first-sec{
+    background: url('img/bg-one.png') no-repeat;
+    background-size:100% 100%; 
+}
+.second-sec{
+   background: url('img/bg-two.png') no-repeat;
+    background-size:100% 100%; 
+}
+.third-sec{
+   background: url('img/bg-one.png') no-repeat;
+   background-size:100% 100%; 
+}
+.fourth-sec{
+    background: url('img/bg-two.png') no-repeat;
+    background-size:100% 100%; 
+    overflow: hidden;
+}
+.focus-spot{
+    display: none;
+    position: fixed;
+    right: 21px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.focus-spot li{
+    position: relative;
+    width: 13px;
+    height: 13px;
+    margin-bottom:24px; 
+    list-style: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid rgba(135, 146, 255, 1);
+    border-radius: 50%;
+}
+.focus-spot li a{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 13px;
+    height: 18px;
+    border-13px: 50%;
+    background-color: rgba(135, 146, 255, 1);
+}
+ .focus-spot .colorfocus a{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: rgba(57, 113, 255, 1);
+} 
+.focus-spot li .sel{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+   
+}

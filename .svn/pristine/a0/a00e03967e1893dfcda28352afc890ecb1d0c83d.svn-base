@@ -1,0 +1,90 @@
+computerGo=()=>{
+	if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			window.location.href = 'https://www.huazilive.com/zuoye';
+	}
+}
+computerMouse=()=>{
+	if(!/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			$(".huaziHeader-computer-text").css('display','block')
+	}
+	
+}
+computerLeave=()=>{
+	if(!/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			$(".huaziHeader-computer-text").css('display','none')
+	}
+	
+}
+$(function(){
+	$('.focus-spot li:first').find('a').addClass('sel').css('background','rgba(57, 113, 255, 1)');
+	$('.client-download').click(function(){
+		if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			let type=$(this).attr('data-type');
+				if(type==0){//教师端
+		    		window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.edu.teacher";
+				}else{//学生端
+					window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.edu.student"
+				}
+		}else {
+		    $(this).siblings('.ios-code').removeClass('shake').addClass('shake');
+		}
+	})
+	$('.focus-spot li').click(function(e){
+		e.stopPropagation();
+		e.preventDefault();
+		let currentIndex=$(this).index();
+		$("html,body").animate({'scrollTop':$(window).height()*currentIndex},500);//1000是ms,也可以用slow代替 
+		
+		console.log(currentIndex)
+		if(currentIndex==1||currentIndex==3){
+			$('.focus-spot li').addClass('colorfocus')
+			$(this).find('a').addClass('sel').css('background','rgba(135, 146, 255, 1)');
+			$(this).siblings('li').find('a').removeClass('sel').css('background','rgba(57, 113, 255, 1)');
+			
+		}else{
+			$('.focus-spot li').removeClass('colorfocus');
+			$(this).find('a').addClass('sel').css('background','rgba(57, 113, 255, 1)');
+			$(this).siblings('li').find('a').removeClass('sel').css('background','rgba(135, 146, 255, 1)');
+		}
+	})
+	$(window).on('mousewheel',handleScroll)
+})
+handleScroll=()=>{
+	let scrollTop=$(window).scrollTop(),
+			screenH=$(window).height();
+			console.log(scrollTop,screenH)
+			if(scrollTop>0&&scrollTop<screenH){
+				$('.focus-spot li').removeClass('colorfocus')
+				$('.focus-spot li').eq(0).find('a').addClass('sel').css('background','rgba(57, 113, 255, 1)');
+				$('.focus-spot li').eq(0).siblings('li').find('a').removeClass('sel').css('background','rgba(135, 146, 255, 1)');
+			}else if(scrollTop>screenH&&scrollTop<screenH*2){
+				$('.focus-spot li').addClass('colorfocus')
+				$('.focus-spot li').eq(1).find('a').addClass('sel').css('background','rgba(135, 146, 255, 1)');
+				$('.focus-spot li').eq(1).siblings('li').find('a').removeClass('sel').css('background','rgba(57, 113, 255, 1)');
+			}else if(scrollTop>screenH*2&&scrollTop<screenH*2.8){
+				$('.focus-spot li').removeClass('colorfocus')
+				$('.focus-spot li').eq(2).find('a').addClass('sel').css('background','rgba(57, 113, 255, 1)');
+				$('.focus-spot li').eq(2).siblings('li').find('a').removeClass('sel').css('background','rgba(135, 146, 255, 1)');
+			}else if(scrollTop>screenH*2.8){
+				$('.focus-spot li').addClass('colorfocus')
+				$('.focus-spot li').eq(3).find('a').addClass('sel').css('background','rgba(135, 146, 255, 1)');
+				$('.focus-spot li').eq(3).siblings('li').find('a').removeClass('sel').css('background','rgba(57, 113, 255, 1)');
+			}
+}
+(function (doc, win) {
+	var docEl = doc.documentElement,
+	    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	    recalc = function () {
+	        var clientWidth = docEl.clientWidth;
+	        if (!clientWidth) return;
+	        if(clientWidth>=640){
+	            docEl.style.fontSize = '100px';
+	        }else{
+	            docEl.style.fontSize = (100 * (clientWidth / 640)).toFixed(2) + 'px';
+	        }
+	    };
+
+	if (!doc.addEventListener) return; 
+	win.addEventListener(resizeEvt, recalc, false);
+	doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
